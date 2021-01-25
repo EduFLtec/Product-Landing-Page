@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Global English Lessons</title>
+</head>
+<body>
+  <!-- 1. My product landing page should have a <header> element with corresponding id="header". -->
+  <header class="header" id="header">
+      <div class="header_logo-box">
+        <!-- 2. I can see an image within the #header element with a corresponding id="header-img". A company logo would make a good image here. -->
+        <img
+          class="header_logo"
+          id="header-img"
+          src="img/GCE.png"
+          alt="GCE owl logo"
+        />
+      </div>
+      <!-- 3. Within the <header> element I can see a <nav> element with corresponding id="nav-bar".'-->
+      <nav class="header_main-nav" id="nav-bar">
+        <ul class="main-nav__list">
+          <!-- 4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
+          5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.' -->
+          <li class="nav-link"><a  href="#program">Program Overview</a></li>
+          <li class="nav-link"><a  href="#levels">Levels</a></li>
+          <li class="nav-link"><a  href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+  </header>
+   <!-- 6. I can watch an embedded product video with id="video". -->  
+   <section class="video_main" id="program">
+    <iframe
+      class="video__iframe"
+      id="video"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </section>
+
+  <div class="container">
+    <section id="levels">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Premium Materials</h2>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 7. My landing page has a <form> element with a corresponding id="form".'
+    8. Within the form, there is an <input> field with id="email" where I can enter an email address.
+    9. The #email input field should have placeholder text to let the user know what the field is for.
+    10. The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+    11. Within the form, there is a submit <input> with corresponding id="submit".
+    12. When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+  <section class="input-form">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+ 
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2016, Original Trombones</span>
+    </footer>
+  </div>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+
+<!-- #Technology Stack
+1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+#Content
+1. My product landing page should have a <header> element with corresponding id="header".
+2. I can see an image within the #header element with a corresponding id="header-img". A company logo would make a good image here.
+3. Within the <header> element I can see a <nav> element with corresponding id="nav-bar".'
+4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
+5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.'
+6. I can watch an embedded product video with id="video".
+7. My landing page has a <form> element with a corresponding id="form".'
+8. Within the form, there is an <input> field with id="email" where I can enter an email address.
+9. The #email input field should have placeholder text to let the user know what the field is for.
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+11. Within the form, there is a submit <input> with corresponding id="submit".
+12. When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+#Layout
+1. The navbar should always be at the top of the viewport.
+2. My product landing page should have at least one media query.
+3. My product landing page should utilize CSS flexbox at least once.
+ -->

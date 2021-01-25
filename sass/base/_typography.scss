@@ -1,0 +1,17 @@
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-gray-dark;
+  padding: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-nav__list{
+  list-style-type: none;
+  font-size: 2rem;
+}
