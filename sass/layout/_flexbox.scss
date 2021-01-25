@@ -1,21 +1,43 @@
 .header{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-
-  &_main-nav{
-    flex-grow: 1;
-    text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  
+  &_logo-box{
+    display: inline;
+  text-align: center;
   }
 
+  &_main-nav{
+    text-align: left;
+  }
 }
 
-.nav-link {
-  display: inline;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
 
+
+@media (min-width: 769px) {
+  .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  
+  
+    &_main-nav{
+      flex-grow: 1;
+      text-align: center;
+    }
+  
+  }
+
+  .nav-link {
+    display: inline;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+	
+}
 
 
