@@ -1,33 +1,34 @@
 .header{
+  // position: fixed;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   
+  
   &_logo-box{
     display: inline;
-  text-align: center;
+    text-align: center;
   }
 
   &_main-nav{
     text-align: left;
   }
+
 }
-
-
 
 @media (min-width: 769px) {
   .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   
   
     &_main-nav{
       flex-grow: 1;
-      text-align: center;
+      text-align: right;
     }
   
   }

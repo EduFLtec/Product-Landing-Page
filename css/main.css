@@ -40,7 +40,7 @@
     transform: translateX(-1rem);
   }
   80% {
-    transform: translateX(2rem);
+    transform: translateX(0.5rem);
   }
   100% {
     opacity: 1;
@@ -74,6 +74,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #1f3c5e;
 }
 
 .main-nav__list {
@@ -153,13 +154,13 @@ a {
 @media (min-width: 769px) {
   .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
   .header_main-nav {
     flex-grow: 1;
-    text-align: center;
+    text-align: right;
   }
 
   .nav-link {
@@ -170,9 +171,10 @@ a {
 }
 .header {
   height: auto;
-  background-image: linear-gradient(to right, rgba(255, 213, 98, 0.8), rgba(23, 64, 6, 0.8));
+  background-image: linear-gradient(-45deg, rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8));
 }
 .header_logo {
+  height: 12rem;
   animation-name: moveInTop;
   animation-duration: 1s;
   animation-timing-function: ease-out;

@@ -9,9 +9,19 @@ body {
 
 a{
   text-decoration: none;
+  color: $color-primary-dark;
 }
+
+// .nav-link{
+//   padding: 1rem;
+//   margin: .5rem;
+//   border: .2rem solid $color-gray-dark;
+//   background-color: $color-secondary;
+//   border-radius: .5rem;
+// }
 
 .main-nav__list{
   list-style-type: none;
   font-size: 2rem;
 }
+
