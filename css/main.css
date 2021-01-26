@@ -139,24 +139,21 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   margin: 1rem;
   padding: 1rem;
 }
 .header_logo-box {
   display: inline;
-  text-align: center;
+  text-align: left;
 }
 .header_main-nav {
   text-align: left;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px), (min-width: 992px) {
   .header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
   .header_main-nav {
     flex-grow: 1;
@@ -169,27 +166,43 @@ a {
     margin-right: 5rem;
   }
 }
+@media (min-width: 992px) {
+  .header_main-nav {
+    align-self: flex-end;
+    margin-bottom: 3rem;
+  }
+}
 .header {
   height: auto;
   background-image: linear-gradient(-45deg, rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8));
 }
 .header_logo {
-  height: 12rem;
+  height: 5rem;
   animation-name: moveInTop;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 .header_main-nav {
-  animation-name: moveInLeft;
+  animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
+  .header_logo {
+    height: 12rem;
+  }
   .header_main-nav {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border: 0.2rem solid #514e4e;
+    background-color: #9BE482;
+    border-radius: 0.5rem;
   }
 }
 .section-about {

@@ -2,14 +2,13 @@
   // position: fixed;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   
   
   &_logo-box{
     display: inline;
-    text-align: center;
+    text-align: left;
   }
 
   &_main-nav{
@@ -18,14 +17,11 @@
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px), (min-width: 992px) {
   .header{
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-  
-  
+    
     &_main-nav{
       flex-grow: 1;
       text-align: right;
@@ -42,3 +38,15 @@
 }
 
 
+@media (min-width: 992px) {
+  .header{
+    
+    &_main-nav{
+      align-self: flex-end;
+      margin-bottom: 3rem;
+    }
+    // .nav-link {
+      
+    // }
+  }
+}  
