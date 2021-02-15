@@ -6,9 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
   padding: 1rem;
-  
   
   &_logo-box{
     display: inline;
@@ -23,14 +21,15 @@
 
 
 .grid-container{
-  margin-top: 15rem;
+  margin-top: 10rem;
   position: relative;
   display: flex;
+  flex-direction: column;
 }
 
 .footer {
   display: block;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
 }
@@ -53,6 +52,13 @@
     margin-right: 5rem;
   }
 	
+  .grid-container{
+    flex-direction: row;
+    margin-top: 10rem;
+  }
+
+
+
 }
 
 
@@ -67,4 +73,9 @@
       
     // }
   }
+
+  .grid-container{
+    margin-top: 15rem;
+  }
+
 }  
