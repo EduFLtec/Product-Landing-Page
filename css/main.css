@@ -140,7 +140,11 @@ a {
   margin-top: 7.7rem;
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
+  .grid-container_item {
+    margin-left: 1rem;
+    margin-right: 1rem; }
 
 .footer {
   display: block;
@@ -160,7 +164,8 @@ a {
     margin-left: 5rem;
     margin-right: 5rem; }
   .grid-container {
-    flex-direction: row; } }
+    flex-direction: row;
+    align-items: flex-end; } }
 
 @media (min-width: 992px) {
   .header_main-nav {
@@ -181,7 +186,6 @@ a {
   padding: 2rem;
   height: fit-content;
   text-align: center;
-  flex-wrap: wrap;
   background-image: radial-gradient(at bottom right, rgba(31, 60, 94, 0.8), rgba(104, 194, 232, 0.8)); }
   .grid-container_item {
     margin-bottom: 1rem; }
