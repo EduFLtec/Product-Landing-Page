@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Global English Lessons</title>
 </head>
@@ -23,19 +24,18 @@
       <ul class="main-nav__list">
         <!-- 4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
           5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.' -->
-        <li class="nav-link"><a href="#program">Program Overview</a></li>
-        <li class="nav-link"><a href="#levels">Levels</a></li>
-        <li class="nav-link"><a href="#pricing">Pricing</a></li>
+        <a class="nav-link" href="#levels">Levels</a></li>
+        <a class="nav-link" href="#program">Program Overview</a></li>
+        <a class="nav-link" href="#features">Features</a></li>
       </ul>
     </nav>
   </header>
 
     <div class="grid-container">
-      <div class="grid-item">
-        <section class="course_main" id="pricing">
-          <div class="course_level" id="tenor">
-            <div class="level">Beginner</div>
-            <h2>$600</h2>
+      <div class="grid-container_item">
+        <section class="course_main" id="levels">
+          <div class="course_level">
+            <h2 class="level">Beginner</h2>
             <ol>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
@@ -44,10 +44,9 @@
             </ol>
             <button class="btn">Select</button>
           </div>
-          <div class="course_level" id="intermediate">
-            <div class="level">Intermediate</div>
-            <h2>$900</h2>
-            <ol>
+          <div class="course_level">
+            <h2 class="level">Intermediate</h2>
+             <ol>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum.</li>
               <li>Lorem ipsum dolor.</li>
@@ -55,22 +54,21 @@
             </ol>
             <button class="btn">Select</button>
           </div>
-          <div class="course_level" id="advanced">
-            <div class="level">Advanced</div>
-            <h2>$1200</h2>
-            <ol>
-              <li>Plays similar to a Trumpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
+          <div class="course_level">
+            <h2 class="level">Advanced</h2>
+              <ol>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
             <button class="btn">Select</button>
           </div>
         </section>
       </div>
 
       <!-- 6. I can watch an embedded product video with id="video". -->
-      <div class="grid-item">
+      <div class="grid-container_item">
         <section class="video_main" id="program">
           <iframe class="video__iframe" id="video" height="315" src="https://www.youtube.com/embed/thdMhXYKnp0"
             frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -78,21 +76,21 @@
         </section>
       </div>
 
-      <div class="grid-item">
-        <section class="levels">
-          <div class="level-feature">
+      <div class="grid-container_item">
+        <section class="features_main" id="features">
+          <div class="feature">
             <h2>Research Backed Results</h2>
             <p>
               Our teachers use the latest, researh backed teaching methodology.
             </p>
           </div>
-          <div class="level-feature">
+          <div class="feature">
             <h2>Learn Anytime, Anywhere.</h2>
             <p>
               Our scheduling tool allows you to select times that fit with your busy lifestyle.
             </p>
           </div>
-          <div class="level-feature">
+          <div class="feature">
             <h2>Free Trial</h2>
             <p>
               Sign up for your free trial lesson today!
