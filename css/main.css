@@ -63,9 +63,14 @@ a {
 .main-nav__list {
   font-size: 2rem; }
 
-.course_main {
-  list-style-type: none;
-  font-size: 2rem; }
+.grid-container {
+  font-size: 1.8rem; }
+
+.course_main li {
+  list-style-type: none; }
+
+.footer {
+  font-size: 1.5rem; }
 
 .u-center-text {
   text-align: center; }
@@ -168,6 +173,8 @@ a {
   height: auto;
   margin: 0;
   width: 100%;
+  display: inline-block;
+  text-align: center;
   background-image: linear-gradient(45deg, rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
 
 .grid-container {
@@ -179,12 +186,11 @@ a {
   .grid-container_item {
     margin-bottom: 1rem; }
 
-.course_level {
+.course_level,
+.feature {
   border: 0.2rem solid #514e4e;
+  border-radius: 1rem;
   background-image: radial-gradient(rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
-
-.video_main {
-  width: 100%; }
 
 .header {
   height: auto;

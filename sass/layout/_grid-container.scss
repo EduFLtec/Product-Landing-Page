@@ -13,14 +13,12 @@
 
 }
 
-.course_level{
+.course_level,
+.feature {
     border: .2rem solid $color-gray-dark;
+    border-radius: 1rem;
     background-image: radial-gradient(
     rgba($color-secondary-dark, 0.8), 
     rgba($color-secondary-light, 0.8));
 }
 
-.video_main{
-
-    width: 100%;
-}
