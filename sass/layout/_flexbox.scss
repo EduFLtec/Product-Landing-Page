@@ -49,9 +49,10 @@
     align-items: flex-end;
   }
 
-  .grid-container {
-    margin-top: 12rem;
-  }
+
+
+  
+
 }
 
 @media (min-width: 769px), (min-width: 992px) {
@@ -77,7 +78,13 @@
     align-items: flex-center;
   }
 
+  .grid-box-1{
+    flex-grow: 2;
+  }
 
+  .grid-box-2{
+    flex-grow: 1;
+  }
 
 }
 
@@ -92,7 +99,7 @@
   }
 
   .grid-container{
-    margin-top: 14.6rem;
+    margin-top: 12.6rem;
   }
 
 }  

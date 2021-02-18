@@ -1,6 +1,6 @@
 .header {
   height: auto;
-  margin-bottom: 2rem;
+ 
   background-image: linear-gradient(
     -45deg,
     rgba($color-secondary-dark, 1), 
@@ -20,16 +20,41 @@
   }
 }
 
-@media (min-width: 768px)
-{
- 
+.btn.nav-toggle { 
+  display: none;
+}
+
+@media (max-width: 768px) {
+ .main-nav__list{
+   display: none;
+ }
+
+  .btn.nav-toggle { 
+    display: block;
+    text-align: right; 
+    color: $color-primary-light;
+    background: $color-primary-dark;
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .5rem;
+ }
+
+  #hamburger {
+    display: none;
+  }
+
+  .header_main-nav input:checked ~ .main-nav__list {
+    display: inline-flex;
+  }
+
+
 }
 
 @media (min-width: 992px) {
   .header{
   
     &_logo {
-      height: 12rem;
+      height: 10rem;
     }
 
     &_main-nav{
