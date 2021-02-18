@@ -172,7 +172,9 @@ a,
   .grid-box-1 {
     flex-grow: 2; }
   .grid-box-2 {
-    flex-grow: 1; } }
+    flex-grow: 1; }
+  .grid-box-3 {
+    flex-grow: 2; } }
 
 @media (min-width: 992px) {
   .header_main-nav {
