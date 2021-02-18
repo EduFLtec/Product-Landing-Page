@@ -56,7 +56,8 @@ body {
   line-height: 1.7;
   color: #514e4e; }
 
-a {
+a,
+.btn {
   text-decoration: none;
   color: #1f3c5e; }
 
@@ -81,45 +82,40 @@ a {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative;
-  font-size: 1.6rem; }
+  transition: all .2s; }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-0.5rem); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+.btn.next, .btn.previous, .btn.select, .btn.submit {
+  padding: .3rem;
+  border: 0.1rem solid #514e4e;
+  background-color: #68c2e8;
+  border-radius: .7rem; }
+  .btn.next:hover, .btn.previous:hover, .btn.select:hover, .btn.submit:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .btn.next:active, .btn.previous:active, .btn.select:active, .btn.submit:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--white {
-  background-color: #fff;
-  color: #514e4e; }
-  .btn--white::after {
-    background-color: #fff; }
+.btn.submit {
+  background-color: #9BE482; }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
+@media (min-width: 992px) {
+  .btn.nav-link {
+    padding: 1rem;
+    border: 0.2rem solid #514e4e;
+    background-color: #9BE482;
+    border-radius: .5rem; }
+    .btn.nav-link:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn.nav-link:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
 
 .header {
   position: fixed;
@@ -188,13 +184,25 @@ a {
   text-align: center;
   background-image: radial-gradient(at bottom right, rgba(31, 60, 94, 0.8), rgba(104, 194, 232, 0.8)); }
   .grid-container_item {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    flex: 1; }
+
+.course_main {
+  flex: 2 0 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .course_level,
 .feature {
   border: 0.2rem solid #514e4e;
   border-radius: 1rem;
   background-image: radial-gradient(rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
+
+.btn.next,
+.btn.previous,
+.btn.select {
+  width: 5rem;
+  margin: 1rem; }
 
 #level-2,
 #level-3 {
@@ -224,12 +232,7 @@ a {
   .header_main-nav {
     animation-name: moveInRight;
     animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .nav-link {
-    padding: 1rem;
-    border: 0.2rem solid #514e4e;
-    background-color: #9BE482;
-    border-radius: .5rem; } }
+    animation-timing-function: ease-out; } }
 
 .section-about {
   background-color: #f7f7f7;

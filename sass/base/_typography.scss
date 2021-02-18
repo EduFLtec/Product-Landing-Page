@@ -6,10 +6,13 @@ body {
   color: $color-gray-dark;
 }
 
-a{
+a,
+.btn{
   text-decoration: none;
   color: $color-primary-dark;
 }
+
+
 
 .main-nav__list{
   font-size: 2rem;

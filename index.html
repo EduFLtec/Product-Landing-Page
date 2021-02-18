@@ -24,9 +24,9 @@
       <ul class="main-nav__list">
         <!-- 4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
           5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.' -->
-        <a class="nav-link" href="#levels">Levels</a></li>
-        <a class="nav-link" href="#program">Program Overview</a></li>
-        <a class="nav-link" href="#features">Features</a></li>
+        <a class="btn nav-link " href="#levels">Levels</a></li>
+        <a class="btn nav-link " href="#program">Program Overview</a></li>
+        <a class="btn nav-link " href="#features">Features</a></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +42,9 @@
               <li>Lorem ipsum dolor.</li>
               <li>Lorem ipsum.</li>
             </ol>
-            <button class="btn">Select</button>
+            <button class="btn previous">&lt;</button>
+            <button class="btn select">Select</button>
+            <button class="btn next">&gt;</button>
           </div>
           <div class="course_level" id="level-2">
             <h2>Intermediate</h2>
@@ -52,7 +54,9 @@
               <li>Lorem ipsum dolor.</li>
               <li>Lorem ipsum.</li>
             </ol>
-            <button class="btn">Select</button>
+            <button class="btn previous">&lt;</button>
+            <button class="btn select">Select</button>
+            <button class="btn next">&gt;</button>
           </div>
           <div class="course_level" id="level-3">
             <h2>Advanced</h2>
@@ -62,8 +66,11 @@
                 <li>Lorem ipsum dolor.</li>
                 <li>Lorem ipsum.</li>
               </ol>
-            <button class="btn">Select</button>
+              <button class="btn previous">&lt;</button>
+              <button class="btn select">Select</button>
+              <button class="btn next">&gt;</button>
           </div>
+        
         </section>
       </div>
 
@@ -83,18 +90,24 @@
             <p>
               Our teachers use the latest, researh backed teaching methodology.
             </p>
+            <button class="btn previous">&lt;</button>
+            <button class="btn next">&gt;</button>
           </div>
           <div class="feature" id="feature-2">
             <h2>Learn Anytime, Anywhere.</h2>
             <p>
               Our scheduling tool allows you to select times that fit with your busy lifestyle.
             </p>
+            <button class="btn previous">&lt;</button>
+            <button class="btn next">&gt;</button>
           </div>
           <div class="feature" id="feature-3">
             <h2>Free Trial</h2>
             <p>
               Sign up for your free trial lesson today!
             </p>
+            <button class="btn previous">&lt;</button>
+            <button class="btn next">&gt;</button>
           </div>
         </section>
       </div>
@@ -108,7 +121,7 @@
         <section class="input-form">
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input name="email" id="email" type="email" placeholder="Enter your email address" required />
-            <input id="submit" type="submit" value="Get Started" class="btn" />
+            <input id="submit" type="submit" value="Get Started" class="btn submit" />
           </form>
       </section>
       </div>

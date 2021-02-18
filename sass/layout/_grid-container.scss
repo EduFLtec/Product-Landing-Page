@@ -1,25 +1,40 @@
-.grid-container{
-   padding: 2rem;
-   height: fit-content;
-   text-align: center;
-   background-image: radial-gradient(at bottom right,
-    rgba($color-primary-dark, .8), 
-    rgba($color-primary-light, .8));
-    
+.grid-container {
+    padding: 2rem;
+    height: fit-content;
+    text-align: center;
+    background-image: radial-gradient(at bottom right,
+            rgba($color-primary-dark, .8),
+            rgba($color-primary-light, .8));
+
     &_item {
         margin-bottom: 1rem;
+        flex: 1;
     }
 
+}
+
+.course_main {
+    flex: 2 0 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .course_level,
 .feature {
     border: .2rem solid $color-gray-dark;
     border-radius: 1rem;
-    background-image: radial-gradient(
-    rgba($color-secondary-dark, 0.8), 
-    rgba($color-secondary-light, 0.8));
+    background-image: radial-gradient(rgba($color-secondary-dark, 0.8),
+            rgba($color-secondary-light, 0.8));
 }
+
+
+    .btn.next,
+    .btn.previous,
+    .btn.select {
+      width: 5rem;
+      margin: 1rem;
+    }
+
 
 #level-2,
 #level-3 {
