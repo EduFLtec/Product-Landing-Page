@@ -28,13 +28,19 @@
 }
 
 
-    .btn.next,
-    .btn.previous,
-    .btn.select {
-      width: 5rem;
-      margin: 1rem;
-    }
+.btn.next{
+    margin-left: 15%;
+}
 
+.btn.previous{
+    margin-right: 15%;
+}
+
+
+.course_level .btn,
+.feature .btn {
+    margin-bottom: 1rem;
+}
 
 #level-2,
 #level-3 {

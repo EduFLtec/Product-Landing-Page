@@ -103,7 +103,11 @@ a,
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn.submit {
+  padding-top: .5rem;
   background-color: #9BE482; }
+
+.btn.select {
+  padding-top: .5rem; }
 
 @media (min-width: 992px) {
   .btn.nav-link {
@@ -129,8 +133,6 @@ a,
   .header_logo-box {
     display: inline;
     text-align: left; }
-  .header_main-nav {
-    text-align: left; }
 
 .grid-container {
   margin-top: 7.7rem;
@@ -147,6 +149,14 @@ a,
   position: relative;
   left: 0;
   bottom: 0; }
+
+@media (max-width: 768px) {
+  .main-nav__list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  .grid-container {
+    margin-top: 12rem; } }
 
 @media (min-width: 769px), (min-width: 992px) {
   .header {
@@ -198,11 +208,15 @@ a,
   border-radius: 1rem;
   background-image: radial-gradient(rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
 
-.btn.next,
-.btn.previous,
-.btn.select {
-  width: 5rem;
-  margin: 1rem; }
+.btn.next {
+  margin-left: 15%; }
+
+.btn.previous {
+  margin-right: 15%; }
+
+.course_level .btn,
+.feature .btn {
+  margin-bottom: 1rem; }
 
 #level-2,
 #level-3 {

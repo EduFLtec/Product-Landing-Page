@@ -13,11 +13,10 @@
     text-align: left;
   }
 
-  &_main-nav{
-    text-align: left;
-  }
+ 
 
 }
+
 
 
 .grid-container{
@@ -40,6 +39,19 @@
   position: relative;
   left: 0;
   bottom: 0;
+}
+
+
+@media (max-width: 768px){
+  .main-nav__list{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .grid-container {
+    margin-top: 12rem;
+  }
 }
 
 @media (min-width: 769px), (min-width: 992px) {
@@ -77,9 +89,6 @@
       align-self: flex-end;
       margin-bottom: 3rem;
     }
-    // .nav-link {
-      
-    // }
   }
 
   .grid-container{

@@ -40,8 +40,13 @@
   }
 
   &.submit {
+    padding-top: .5rem;
     background-color: $color-secondary;
   }
+
+  &.select {
+    padding-top: .5rem;
+  }  
 
 }
 
