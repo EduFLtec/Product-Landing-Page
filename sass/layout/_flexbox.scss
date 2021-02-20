@@ -30,6 +30,9 @@
 
 }
 
+.input-form {
+  margin-top: 1rem;
+}
 
 .footer {
   display: block;
@@ -75,13 +78,13 @@
   .grid-container{
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items:center;
     flex-wrap: wrap;
   }
 
 
   .box-1{
-    flex-grow: 1;
+    flex-grow: 2;
     min-width: 30rem;
   }
 
@@ -89,6 +92,7 @@
     flex-grow: 1;
     & .video__iframe{
       width: 50rem;
+      margin-top: 1rem;
     }
   }
 

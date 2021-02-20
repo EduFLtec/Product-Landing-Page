@@ -26,7 +26,8 @@
   &.next,
   &.previous,
   &.select,
-  &.submit {
+  &.submit,
+  &.nav-toggle {
     padding: .3rem;
     border: .1rem solid $color-gray-dark;
     border-radius: .7rem;

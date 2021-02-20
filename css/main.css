@@ -94,13 +94,13 @@ a,
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn.next, .btn.previous, .btn.select, .btn.submit {
+  .btn.next, .btn.previous, .btn.select, .btn.submit, .btn.nav-toggle {
     padding: .3rem;
     border: 0.1rem solid #514e4e;
     border-radius: .7rem; }
-    .btn.next:hover, .btn.previous:hover, .btn.select:hover, .btn.submit:hover {
+    .btn.next:hover, .btn.previous:hover, .btn.select:hover, .btn.submit:hover, .btn.nav-toggle:hover {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
-    .btn.next:active, .btn.previous:active, .btn.select:active, .btn.submit:active {
+    .btn.next:active, .btn.previous:active, .btn.select:active, .btn.submit:active, .btn.nav-toggle:active {
       transform: translateY(-1px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn.submit {
@@ -142,6 +142,9 @@ a,
   .grid-container_item {
     margin: 2rem; }
 
+.input-form {
+  margin-top: 1rem; }
+
 .footer {
   display: block;
   position: relative;
@@ -170,15 +173,16 @@ a,
   .grid-container {
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap; }
   .box-1 {
-    flex-grow: 1;
+    flex-grow: 2;
     min-width: 30rem; }
   .box-2 {
     flex-grow: 1; }
     .box-2 .video__iframe {
-      width: 50rem; }
+      width: 50rem;
+      margin-top: 1rem; }
   .box-3 {
     flex-grow: 1;
     max-width: 40rem; } }
