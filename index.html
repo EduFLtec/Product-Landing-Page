@@ -22,7 +22,7 @@
     <!-- 3. Within the <header> element I can see a <nav> element with corresponding id="nav-bar".'-->
     <nav class="header_main-nav" id="nav-bar">
       <input type="checkbox" class="btn nav-toggle" id="hamburger" />
-      <label for="hamburger" class="btn nav-toggle">&#9776;</label>
+      <label for="hamburger" class="btn nav-toggle" id="nav-toggle">&#9776;</label>
       <ul class="main-nav__list">
         <!-- 4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
           5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.' -->
@@ -36,7 +36,7 @@
   <div class="grid-container">
     <div class="box-1">
         <section class="course_main" id="levels">
-          <div class="course_level" id="level-1">
+          <div class="course_level active" id="level-1">
             <h2>Beginner</h2>
             <ol>
               <li>Lorem ipsum.</li>
@@ -46,7 +46,7 @@
             </ol>
             <button class="btn previous">&lt;</button>
             <button class="btn select">Select</button>
-            <button class="btn next">&gt;</button>
+            <button class="btn next active">&gt;</button>
           </div>
           <div class="course_level" id="level-2">
             <h2>Intermediate</h2>
@@ -154,6 +154,7 @@
     </ul>
     <span class="footer-legal">Copyright 2021, Global English Lessons</span>
   </footer>
+  <script src="js/app.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 

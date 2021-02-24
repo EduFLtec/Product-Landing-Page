@@ -13,10 +13,13 @@
 
 }
 
+.course_level {
+    display: none;
+}
 
-
-.course_level,
+.course_level.active,
 .feature {
+    display: block;
     border: .2rem solid $color-gray-dark;
     border-radius: 1rem;
     background-image: radial-gradient(rgba($color-secondary-dark, 0.8),
@@ -33,15 +36,13 @@
 }
 
 
-.course_level .btn,
+.course_level.active .btn,
 .feature .btn {
+    display: inline-flex;
     margin-bottom: 1rem;
 }
 
-#level-2,
-#level-3 {
-    display: none;
-}
+
 
 #feature-2,
 #feature-3 {
