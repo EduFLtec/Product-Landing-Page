@@ -15,7 +15,6 @@ navList.onclick = () => {
 
 //course_level box slide controls
 let courseSlides = document.querySelector("#levels").children;
-//selector is getting the 1st button from html, -fix: remove control instances from each level, make 1 set of controls
 let courseNextBtn = document.querySelector(".btn.next");
 let coursePrevBtn = document.querySelector(".btn.previous");
 let courseSlidesAll = courseSlides.length;
@@ -37,7 +36,13 @@ function moveCourseSlide(direction) {
         courseLevelIndex = 0;
       }
   }
-
+  else{
+    if(courseLevelIndex == 0) {
+      courseLevelIndex = courseSlidesAll-1;
+    } else {
+      courseLevelIndex--;
+    }
+  }
   for(i = 0; i < courseSlidesAll; i++) {
     courseSlides[i].classList.remove("active");
   }

@@ -221,6 +221,9 @@ a,
   border-radius: 1rem;
   background-image: radial-gradient(rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
 
+.btn-box {
+  margin-top: 1rem; }
+
 .btn.next {
   margin-left: 15%; }
 
