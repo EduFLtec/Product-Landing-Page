@@ -49,6 +49,14 @@ html {
 body {
   box-sizing: border-box; }
 
+@media (min-width: 854px) {
+  .wrapper {
+    height: 80vh; } }
+
+@media (min-width: 1225px) {
+  .wrapper {
+    height: 70vh; } }
+
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
@@ -209,11 +217,13 @@ a,
   text-align: center;
   background-image: linear-gradient(45deg, #70a45e, #f9f871); }
 
+.wrapper {
+  background-image: radial-gradient(at bottom right, rgba(31, 60, 94, 0.8), rgba(104, 194, 232, 0.8)); }
+
 .grid-container {
   padding: 2rem;
   height: fit-content;
-  text-align: center;
-  background-image: radial-gradient(at bottom right, rgba(31, 60, 94, 0.8), rgba(104, 194, 232, 0.8)); }
+  text-align: center; }
 
 .course_level {
   display: none; }
