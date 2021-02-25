@@ -5,12 +5,6 @@
     background-image: radial-gradient(at bottom right,
             rgba($color-primary-dark, .8),
             rgba($color-primary-light, .8));
-
-    &_item {
-        margin-bottom: 1rem;
-        flex: 1;
-    }
-
 }
 
 .course_level {
@@ -18,12 +12,18 @@
 }
 
 .course_level.active,
-.feature {
+.feature,
+.input-form {
     display: block;
     border: .2rem solid $color-gray-dark;
     border-radius: 1rem;
     background-image: radial-gradient(rgba($color-secondary-dark, 0.8),
             rgba($color-secondary-light, 0.8));
+}
+
+.input-form {
+    padding: 1rem;
+    max-width: fit-content;
 }
 
 .btn-box{
