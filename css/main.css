@@ -225,11 +225,12 @@ a,
   height: fit-content;
   text-align: center; }
 
-.course_level {
+.course_level,
+.feature {
   display: none; }
 
 .course_level.active,
-.feature,
+.feature.active,
 .input-form {
   display: block;
   border: 0.2rem solid #514e4e;
@@ -250,13 +251,9 @@ a,
   margin-right: 15%; }
 
 .course_level.active .btn,
-.feature .btn {
+.feature.active .btn {
   display: inline-flex;
   margin-bottom: 1rem; }
-
-#feature-2,
-#feature-3 {
-  display: none; }
 
 .header {
   height: auto;

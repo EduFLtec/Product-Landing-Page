@@ -3,9 +3,6 @@ const navList = document.querySelector(".main-nav__list");
 const hamburger = document.getElementById("hamburger")
 const navToggle = document.getElementById("nav-toggle");
 
-//course_level box items
-
-
 
 //Toggle hamburger nav off when one of its links is clicked
 navList.onclick = () => {
@@ -53,29 +50,43 @@ function moveCourseSlide(direction) {
 }
 
 
+//features_main box slide controls with progress slider
+let featureSlides = document.querySelector("#features").children;
+let featureNextBtn = document.querySelector(".progress-slider > .btn.next");
+let featurePrevBtn = document.querySelector(".progress-slider > .btn.previous")
+let featureSlidesAll = courseSlides.length;
+let featureLevelIndex = 0;
 
 
+featureNextBtn.onclick = function () {
+  moveFeatureSlide("next");
+}
+
+featurePrevBtn.onclick = function () {
+  moveFeatureSlide("prev")
+}
 
 
+function moveFeatureSlide(direction) {
 
-// let levelIndex = 0;
-// const courseNext = 0;
-// courseNextBtn.addEventListener ("click",
-//   document.querySelector(".course_level-active") = "course_level-inactive");
+  if(direction=="next"){
+    featureLevelIndex++;
+      if(featureLevelIndex == featureSlidesAll){
+        featureLevelIndex = 0;
+      }
+  }
+  else{
+    if(featureLevelIndex == 0) {
+      featureLevelIndex = featureSlidesAll-1;
+    } else {
+     featureLevelIndex--;
+    }
+  }
+  for(i = 0; i < featureSlidesAll; i++) {
+    featureSlides[i].classList.remove("active");
+  }
+
+  featureSlides[featureLevelIndex].classList.add("active");
 
 
-
-
-// courseLevel = () => {
-//     let i;
-//     let slides = document.querySelector(".course_level");
-//     for (i = 0; i < slides.length; i++) {
-//       slides[i].className = "course_level-inactive";  
-//     }
-//     courseNextBtn.onclick = () => levelIndex++;
-//     courseBackBtn.onclick = () => levelIndex--;
-//     if (levelIndex > slides.length) {levelIndex = 1}    
-//     slides[levelIndex-1].className = "course_level-active";  
-//   }
-
-  
+}
