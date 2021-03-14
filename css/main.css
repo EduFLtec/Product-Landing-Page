@@ -193,7 +193,9 @@ a,
         margin-top: 1rem; }
     .grid-container_box-3 {
       flex-grow: 1;
-      max-width: 40rem; }
+      min-width: 30rem;
+      max-width: 30rem;
+      padding: .5rem; }
     .grid-container_box-4 {
       flex-grow: 1; } }
 
@@ -235,7 +237,11 @@ a,
   display: block;
   border: 0.2rem solid #514e4e;
   border-radius: 1rem;
+  padding: .5rem;
   background-image: radial-gradient(rgba(112, 164, 94, 0.8), rgba(249, 248, 113, 0.8)); }
+
+.feature.active {
+  min-height: 12rem; }
 
 .input-form {
   padding: 1rem;

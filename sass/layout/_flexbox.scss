@@ -94,7 +94,9 @@
 
     &_box-3{
       flex-grow: 1;
-      max-width: 40rem;
+      min-width: 30rem;
+      max-width: 30rem;
+      padding: .5rem;
     }
 
     &_box-4{

@@ -24,8 +24,14 @@
     display: block;
     border: .2rem solid $color-gray-dark;
     border-radius: 1rem;
+    padding: .5rem;
     background-image: radial-gradient(rgba($color-secondary-dark, 0.8),
             rgba($color-secondary-light, 0.8));
+}
+
+
+.feature.active {
+    min-height: 12rem;
 }
 
 .input-form {

@@ -50,13 +50,14 @@ function moveCourseSlide(direction) {
 }
 
 
-//features_main box slide controls with progress slider
+//features_main box slide controls with progress slider - need to fix
 let featureSlides = document.querySelector("#features").children;
 let featureNextBtn = document.querySelector(".progress-slider > .btn.next");
 let featurePrevBtn = document.querySelector(".progress-slider > .btn.previous")
 let featureSlidesAll = courseSlides.length;
 let featureLevelIndex = 0;
 
+let featureRadioSlides = document.querySelectorAll(".radio.btn.progress");
 
 featureNextBtn.onclick = function () {
   moveFeatureSlide("next");
@@ -68,7 +69,6 @@ featurePrevBtn.onclick = function () {
 
 
 function moveFeatureSlide(direction) {
-
   if(direction=="next"){
     featureLevelIndex++;
       if(featureLevelIndex == featureSlidesAll){
@@ -84,9 +84,13 @@ function moveFeatureSlide(direction) {
   }
   for(i = 0; i < featureSlidesAll; i++) {
     featureSlides[i].classList.remove("active");
+    featureRadioSlides[i].removeAttribute("checked");
+  
   }
 
   featureSlides[featureLevelIndex].classList.add("active");
+  featureRadioSlides[featureLevelIndex].setAttribute("checked", "checked");
+  
 
 
 }
